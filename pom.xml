@@ -8,26 +8,37 @@
     <artifactId>spring-course</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependendies>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>4.3.2.RELEASE</version>
+            </dependency>
+    </dependendies>
+
     <build>
 
         <plugins>
-
-                <plugin>
+            <plugin>
 
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.5.1</version>
-                <configuration>
-                    <!-- or whatever version you use -->
-                    <source>1.8</source>
-                    <target>1.8</target>
-        </configuration>
-
+                    <configuration>
+                        <!-- or whatever version you use -->
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
              </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.6</version>
+            </plugin>
         </plugins>
 
     </build>
-
-
 
 </project>
