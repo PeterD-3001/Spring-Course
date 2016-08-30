@@ -19,6 +19,7 @@ public class ZooConfig {
         zoo.addAnimal(new Tiger("Bengal Tiger"));
         zoo.addAnimal(new Elephant("Indian Elephant"));
         zoo.addAnimal(new Bear("Brown Bear"));
+
         return zoo;
     }
     // TODO Configure the FoodRepository

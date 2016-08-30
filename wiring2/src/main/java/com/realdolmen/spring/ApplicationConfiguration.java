@@ -16,9 +16,9 @@ public class ApplicationConfiguration {
         // TODO make sure the following print out values from properties files
         System.out.println("Zoo name: " + zoo.getName());
         System.out.println("Nr. of Animals: " + zoo.countAnimals());
-        System.out.println("Max Animals: ");
-        System.out.println("Owner: ");
-        System.out.println("Ticket Price: ");
+        System.out.println("Max Animals: "    +zoo.getMaxAnimalCount());
+        System.out.println("Owner: "          +zoo.getOwnerName());
+        System.out.println("Ticket Price: "   + zoo.getTicketPrice());
         zoo.feedAnimals();
     }
 }

@@ -1,7 +1,10 @@
 package com.realdolmen.spring.service;
 
 import com.realdolmen.spring.domain.Animal;
+import com.realdolmen.spring.domain.FoodDistributionService;
+import com.realdolmen.spring.domain.FoodRepository;
 import com.realdolmen.spring.domain.Visitor;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +16,10 @@ public class PairiDaiza implements Zoo {
     private String name;
     private List<Animal> animals = new ArrayList<>();
 
+    @Autowired
+    private FoodDistributionService fds;
     // TODO fetch the FoodDistributionService
+    // private FoodRepository fdr;
 
     public PairiDaiza(String name) {
         this.name = name;
@@ -47,6 +53,11 @@ public class PairiDaiza implements Zoo {
 
 
     // TODO Call the FoodDistributionService to feed animals
+    @Override
+    public void feedAnimals(){
+        fds.feedAnimalsByType(animals);
+
+    };
 
 
 }

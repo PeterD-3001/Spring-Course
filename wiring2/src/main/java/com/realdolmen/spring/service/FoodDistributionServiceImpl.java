@@ -14,7 +14,7 @@ import java.util.List;
 public class FoodDistributionServiceImpl implements FoodDistributionService {
 
     @Autowired
-    // TODO Load the Kibble Repository
+    // TODO Load the KibbleFood Repository
     private FoodRepository foodRepository;
 
     @Override

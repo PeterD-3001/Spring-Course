@@ -13,7 +13,14 @@ public interface Zoo {
 
     boolean accept(Visitor visitor);
 
+    // Getters voor nieuwe properties
     String getName();
+
+    int getMaxAnimalCount();
+
+    String getOwnerName();
+
+    int getTicketPrice();
 
     // TODO Add more methods (getters) here
     int countAnimals();
