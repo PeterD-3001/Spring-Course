@@ -15,9 +15,9 @@ public class Main {
 
         // Spring start hierdoor zijn application context op...
         //... naar analogie met Tomcat-Catalina
-        ApplicationContext ac = SpringApplication.run(MyConfiguration.class);
+        ApplicationContext context = SpringApplication.run(Main.class);
 
-        Knight k = ac.getBean(Knight.class);
+        Knight k = context.getBean(Knight.class);
         k.embarkOnQuest();
     }
 }
