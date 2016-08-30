@@ -14,7 +14,8 @@ public class BraveKnight implements Knight {
 
     @Override
     public void embarkOnQuest() {
-        System.out.println("I'm a knight and I am brave");
-        quest.embark();
+        System.out.println("KNIGHT: I'm a KNIGHT and I am brave");
+        String message = quest.embark("Smaug");
+        System.out.println(message);
     }
 }
