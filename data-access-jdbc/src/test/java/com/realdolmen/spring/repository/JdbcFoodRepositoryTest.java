@@ -1,5 +1,6 @@
 package com.realdolmen.spring.repository;
 
+import com.realdolmen.spring.TestConfig;
 import com.realdolmen.spring.ZooConfig;
 import com.realdolmen.spring.domain.Animal;
 import com.realdolmen.spring.domain.Food;
@@ -22,6 +23,7 @@ import static org.junit.Assert.assertTrue;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {ZooConfig.class})
+//@ContextConfiguration(classes = {TestConfig.class})
 @ActiveProfiles("test")
 public class JdbcFoodRepositoryTest {
     @Autowired

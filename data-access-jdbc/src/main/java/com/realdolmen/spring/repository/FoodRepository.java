@@ -7,6 +7,7 @@ import com.realdolmen.spring.domain.VegiFood;
 
 import java.util.List;
 
+
 public interface FoodRepository {
     Food findFoodById(int id);
     List<Food> findAllFood();
