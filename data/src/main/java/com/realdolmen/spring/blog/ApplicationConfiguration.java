@@ -12,5 +12,7 @@ public class ApplicationConfiguration {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = new SpringApplicationBuilder(ApplicationConfiguration.class).profiles("production").run();
         // TODO load repositories and test by inserting data into the production database
+
+
     }
 }

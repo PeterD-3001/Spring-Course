@@ -10,12 +10,11 @@ import java.util.Map;
 @Component
 public class FoodRepositoryImplementation implements FoodRepository {
 
-    private Map<Animal,Food> tabel;
+    private Map<Class<? extends Animal>,Food> tabel;
 
     public void addFoodForAnimalType(Class<? extends Animal> clazz,Food food)
     {
-      tabel.put(clazz.getClass(),food);
-
+      tabel.put(clazz,food);
     }
 
     public Food findFoodForAnimalType(Class<? extends Animal> clazz)
